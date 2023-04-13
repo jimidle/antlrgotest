@@ -1,0 +1,7 @@
+JIM = 42
+   and
+JIM in [ 42, 45 46 47 48]
+   or
+JIM has-any [ 56 "something", "else" "here" ]
+   or
+TIME in-time-range [ "12:55" "11:30" ]

@@ -1,0 +1,16 @@
+= Test rig for go
+
+This test rig will build and run the grammar file test.g4 with the `input` file for local testing by maintainers.
+
+You should copy the `dev` branch version of the antlr4 complete jar in to the antlr directory if it is
+different to the one currently in the antlr directory (it usually isn't if and you are on the dev branch of this
+repo.
+
+You can then run
+```sh
+go generate ./...
+go build .
+```
+
+You can change the `test` and `test_test.go` files to call the grammar you are working on (test.g4) and the input file
+you want to test (`input`, in the same directory as test.go).
